@@ -128,9 +128,22 @@ main .main-wrap { max-width: var(--container); margin: 0 auto; padding: 0 1.5rem
 .hero-bg {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgba(17,17,17,0.4) 0%, rgba(17,17,17,0.75) 60%, var(--bg) 100%),
-    url('https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=1920') center/cover no-repeat;
+  background-color: var(--bg);
+  background-image: linear-gradient(180deg, rgba(17,17,17,0.4) 0%, rgba(17,17,17,0.75) 60%, var(--bg) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-bg img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .hero-full { min-height: 100vh; min-height: 100dvh; }
 }
 .hero-content {
   position: relative;
@@ -636,23 +649,41 @@ section.block {
 
 /* Responsive nav */
 @media (max-width: 768px) {
-  .menu-toggle { display: flex; }
+  .menu-toggle {
+    display: flex;
+    z-index: 210;
+    position: relative;
+  }
   .site-nav {
     position: fixed;
-    top: var(--nav-h);
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(17, 17, 17, 0.98);
-    backdrop-filter: blur(20px);
-    padding: 2rem;
+    background: #111111;
+    padding: calc(var(--nav-h) + 1rem) 1.5rem 2rem;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: stretch;
     display: none;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .site-nav.is-open { display: flex; animation: fadeIn 0.3s var(--ease); }
-  .site-nav ul { flex-direction: column; align-items: center; gap: 1.5rem; }
-  .site-nav a { font-size: 1.1rem; }
+  .site-nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .site-nav a {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--border);
+  }
   .hero-btns { flex-direction: column; }
   .hero-btns .btn { min-width: auto; }
 }
