@@ -3,161 +3,247 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Çağrı Grill – Beylikdüzü tavuk mangal. Günlük taze ızgara, 1 kilo tavuk kampanya, uygun fiyatlı ızgara. Şeffaf fiyat, net porsiyon.">
-  <meta name="keywords" content="Beylikdüzü tavuk mangal, 1 kilo tavuk kampanya, uygun fiyatlı ızgara, günlük taze tavuk, Çağrı Grill">
-  <title>Çağrı Grill – Günlük Taze Izgara | Beylikdüzü Tavuk & Mangal</title>
+  <meta name="description" content="Çağrı Grill – Beylikdüzü, İstanbul. Modern Türk ızgara ve kebap. İstanbul'da gerçek ızgara deneyimi, taze et, usta eller, eşsiz lezzet.">
+  <meta name="keywords" content="Çağrı Grill, Beylikdüzü kebap, İstanbul ızgara, Adana kebap, rezervasyon">
+  <title>Çağrı Grill – İstanbul'da Gerçek Izgara Deneyimi | Beylikdüzü</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" id="header">
     <div class="site-header-inner">
-      <a href="index.html" class="site-logo">Çağrı Grill <span>| Tavuk & Izgara</span></a>
+      <a href="index.html" class="site-logo">Çağrı <span>Grill</span></a>
       <button type="button" class="menu-toggle" aria-label="Menüyü aç">
         <span></span><span></span><span></span>
       </button>
       <nav class="site-nav">
         <ul>
           <li><a href="index.html" aria-current="page">Ana Sayfa</a></li>
-          <li><a href="menu.html">Menü</a></li>
-          <li><a href="hakkimizda.html">Hakkımızda</a></li>
-          <li><a href="iletisim.html">İletişim</a></li>
+          <li><a href="#signature">Lezzetler</a></li>
+          <li><a href="#kampanya">Kampanya</a></li>
+          <li><a href="#about">Hakkımızda</a></li>
+          <li><a href="#reviews">Yorumlar</a></li>
+          <li><a href="#gallery">Galeri</a></li>
+          <li><a href="#contact">İletişim</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <div class="hero-wrap">
+    <!-- Hero – fullscreen -->
+    <section class="hero-full" aria-label="Ana sayfa">
       <div class="hero-bg" aria-hidden="true"></div>
-      <section class="hero">
-        <h1>Günlük Taze Izgara – Şeffaf Fiyat, Net Porsiyon</h1>
-        <p class="subheadline">Her gün taze hazırlanan tavuk ve ızgara ürünleri. Çiğ tartım, sipariş üzerine pişirme – sizin için dürüstçe çalışıyoruz.</p>
-        <a href="menu.html" class="btn btn-primary">Menüyü Gör</a>
-      </section>
-    </div>
+      <div class="hero-content">
+        <p class="overline">Beylikdüzü · İstanbul</p>
+        <h1>İstanbul'da Gerçek Izgara Deneyimi</h1>
+        <p class="subtext">Taze Et, Usta Eller, Eşsiz Lezzet</p>
+        <div class="hero-btns">
+          <a href="menu.html" class="btn btn-primary">Menüyü İncele</a>
+          <a href="#rezervasyon" class="btn btn-outline">Rezervasyon Yap</a>
+        </div>
+      </div>
+      <a href="#signature" class="scroll-indicator" aria-label="Aşağı kaydır">
+        <span class="mouse"></span>
+        <span>Keşfet</span>
+      </a>
+    </section>
 
-    <section class="section animate-in" id="kampanya">
-      <div class="section-inner">
-        <h2 class="section-title">1 KG Kampanya Açıklaması</h2>
-        <p class="section-subtitle">Kampanyamızı net ve şeffaf anlatıyoruz. Aklınızda soru kalmasın.</p>
-        <div class="section-with-img">
-          <div>
-            <div class="card">
-              <h3>Çiğ tartım, pişince gram düşer</h3>
-              <p>1 kg kampanyamızda tavuk <strong>çiğ halde tartılır</strong>. Pişirme sırasında su ve yağ kaybı nedeniyle porsiyon ağırlığı azalır; bu doğal bir durumdur. Siz siparişinizi verirken çiğ 1 kg üzerinden işlem yapılır, pişmiş porsiyon ise yaklaşık 700–800 gram civarında olabilir. Fiyatımız çiğ 1 kg üzerindendir – bunu saklamıyoruz.</p>
-            </div>
+    <!-- Signature Dishes -->
+    <section class="block reveal" id="signature">
+      <p class="section-label">Öne Çıkanlar</p>
+      <h2 class="section-title">İmza Lezzetler</h2>
+      <p class="section-desc">Usta ellerden çıkan, mangalda pişen seçkin lezzetlerimiz.</p>
+      <div class="dishes-grid">
+        <article class="dish-card">
+          <div class="dish-card-img">
+            <img src="https://images.unsplash.com/photo-1598511726624-689ee3e8c42b?w=600" alt="Adana Kebap" width="600" height="450" loading="lazy">
           </div>
-          <div class="section-img">
-            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800" alt="Taze ızgara tavuk" width="800" height="600" loading="lazy">
+          <div class="dish-card-body">
+            <h3>Adana Kebap</h3>
+            <p>Kıyılmış kuzu eti, baharatlar ve mangal ateşinde eşsiz doku.</p>
           </div>
+        </article>
+        <article class="dish-card">
+          <div class="dish-card-img">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600" alt="Karışık Kebap" width="600" height="450" loading="lazy">
+          </div>
+          <div class="dish-card-body">
+            <h3>Karışık Kebap</h3>
+            <p>Çeşitli etlerin uyumu, kömürde pişmiş özel porsiyon.</p>
+          </div>
+        </article>
+        <article class="dish-card">
+          <div class="dish-card-img">
+            <img src="https://images.unsplash.com/photo-1567620836583-6f6cb0a2b4b4?w=600" alt="Kanat" width="600" height="450" loading="lazy">
+          </div>
+          <div class="dish-card-body">
+            <h3>Kanat</h3>
+            <p>Çıtır çıtır tavuk kanat, baharatlı veya sade.</p>
+          </div>
+        </article>
+        <article class="dish-card">
+          <div class="dish-card-img">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600" alt="Ali Nazik" width="600" height="450" loading="lazy">
+          </div>
+          <div class="dish-card-body">
+            <h3>Ali Nazik</h3>
+            <p>Patlıcanlı yoğurt ve ızgara kuzu ile geleneksel lezzet.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 1 KG Kampanya -->
+    <section class="block reveal" id="kampanya">
+      <p class="section-label">Şeffaf Fiyat</p>
+      <h2 class="section-title">1 KG Kampanya</h2>
+      <p class="section-desc">Fiyatlarımız net; porsiyon bilgisi şeffaf.</p>
+      <div class="kampanya-card">
+        <h3>Çiğ tartım, pişince gram düşer</h3>
+        <p>1 kg kampanyamızda ürün <strong>çiğ halde tartılır</strong>. Pişirme sırasında su ve yağ kaybı nedeniyle porsiyon ağırlığı azalır; bu doğal bir durumdur. Siparişiniz çiğ 1 kg üzerinden işleme alınır; pişmiş porsiyon yaklaşık 700–800 gram civarında olabilir. Fiyatımız çiğ 1 kg üzerindendir – bunu saklamıyoruz.</p>
+        <p><a href="menu.html">Güncel menü ve fiyatlar →</a></p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="block reveal" id="about">
+      <div class="about-grid">
+        <div class="about-img">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800" alt="Çağrı Grill mekân" width="800" height="600" loading="lazy">
+        </div>
+        <div class="about-text">
+          <p class="section-label">Hikayemiz</p>
+          <h2 class="section-title">Misafirperverlikte Buluşuyoruz</h2>
+          <p class="section-desc">Beylikdüzü'nde gerçek ızgara ve sıcak karşılama.</p>
+          <p>Çağrı Grill olarak İstanbul'un Beylikdüzü semtinde, taze malzeme ve usta işçiliği bir arada sunuyoruz. Mangalda pişen her porsiyon, misafirlerimizin sofrasına saygı ve özenle ulaşsın diye çalışıyoruz.</p>
+          <p>Lezzet kadar hijyen ve şeffaflık da önceliğimizdir. Sipariş üzerine pişirme, net porsiyon bilgisi ve sıcak servis anlayışıyla buradayız.</p>
         </div>
       </div>
     </section>
 
-    <section class="section animate-in delay-1" id="nasil-pisiriyoruz">
-      <div class="section-inner">
-        <h2 class="section-title">Nasıl Pişiriyoruz?</h2>
-        <p class="section-subtitle">Gerçek mangal, sipariş üzerine pişirme. Önceden pişirilmiş ürün sunmuyoruz.</p>
-        <div class="section-with-img reverse">
-          <div class="section-img">
-            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800" alt="Mangalda pişirme" width="800" height="600" loading="lazy">
+    <!-- Customer Reviews -->
+    <section class="block reveal" id="reviews">
+      <p class="section-label">Deneyimler</p>
+      <h2 class="section-title">Misafir Yorumları</h2>
+      <p class="section-desc">Bizi tercih edenlerin deneyimleri.</p>
+      <div class="reviews-wrap">
+        <div class="reviews-track" id="reviewsTrack">
+          <div class="review-card">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <blockquote>Lezzet ve porsiyon gerçekten vaat edildiği gibi. Fiyat-performans çok iyi, tekrar geleceğiz.</blockquote>
+            <cite>— Ayşe K.</cite>
           </div>
-          <div>
-            <div class="card">
-              <h3>Gerçek mangal, sipariş üzerine</h3>
-              <p>Tavuk ve ızgara ürünlerimiz <strong>siparişiniz alındıktan sonra</strong> mangalda pişirilir. Önceden pişirilmiş ürün bekletilmez; tazelik ve lezzet önceliğimizdir. Mangalımız gerçek kömür/ateş üzerinde çalışır.</p>
-            </div>
+          <div class="review-card">
+            <div class="review-stars" aria-hidden="true">★★★★★</div>
+            <blockquote>Adana kebap ve servis kalitesi çok iyiydi. Rezervasyon yapmak da kolaydı.</blockquote>
+            <cite>— Mehmet T.</cite>
+          </div>
+          <div class="review-card">
+            <div class="review-stars" aria-hidden="true">★★★★☆</div>
+            <blockquote>Beylikdüzü'nde aradığımız ızgara deneyimini bulduk. Sade ve güvenilir.</blockquote>
+            <cite>— Zeynep A.</cite>
           </div>
         </div>
+        <div class="review-dots" id="reviewDots" aria-label="Yorum slaytları"></div>
       </div>
     </section>
 
-    <section class="section animate-in delay-2" id="hijyen">
-      <div class="section-inner">
-        <h2 class="section-title">Hijyen ve Denetim</h2>
-        <p class="section-subtitle">Şeffaflık ve güven için hijyen standartlarına uyuyoruz.</p>
-        <div class="card">
-          <h3>QR kontrol ve resmi denetimler</h3>
-          <p>İşletmemizde hijyen kurallarına uyum esastır. Denetim bilgilerine <strong>QR kod</strong> ile ulaşabilir, resmi denetim kayıtlarını görebilirsiniz. Güvenli ve temiz ortam sözümüzdür.</p>
+    <!-- Gallery -->
+    <section class="block reveal" id="gallery">
+      <p class="section-label">Görseller</p>
+      <h2 class="section-title">Galeri</h2>
+      <div class="gallery-wrap">
+        <div class="gallery-item">
+          <a href="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=1200" target="_blank" rel="noopener noreferrer">
+            <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=600" alt="Izgara" width="600" height="400" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="https://images.unsplash.com/photo-1544025162-d76694265947?w=1200" target="_blank" rel="noopener noreferrer">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400" alt="Tavuk ızgara" width="400" height="300" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="https://images.unsplash.com/photo-1598511726624-689ee3e8c42b?w=1200" target="_blank" rel="noopener noreferrer">
+            <img src="https://images.unsplash.com/photo-1598511726624-689ee3e8c42b?w=400" alt="Mangal" width="400" height="300" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200" target="_blank" rel="noopener noreferrer">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400" alt="Yemek" width="400" height="300" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200" target="_blank" rel="noopener noreferrer">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800" alt="Restoran" width="800" height="400" loading="lazy">
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section animate-in delay-3" id="yorumlar">
-      <div class="section-inner">
-        <h2 class="section-title">Müşteri Yorumları</h2>
-        <p class="section-subtitle">Misafirlerimizin deneyimleri – seçili yorumlar.</p>
-        <div class="testimonials-grid">
-          <blockquote class="testimonial">
-            <p>Fiyatı net, porsiyon bilgisi açık. Tadı da güzeldi, tekrar sipariş vereceğim.</p>
-            <cite>— Müşteri yorumu</cite>
-          </blockquote>
-          <blockquote class="testimonial">
-            <p>Taze ve lezzetli, sipariş üzerine pişiyor olması güven veriyor.</p>
-            <cite>— Müşteri yorumu</cite>
-          </blockquote>
-          <blockquote class="testimonial">
-            <p>Beylikdüzü'nde uygun fiyatlı ve güvenilir adres arayanlara öneririm.</p>
-            <cite>— Müşteri yorumu</cite>
-          </blockquote>
-          <blockquote class="testimonial">
-            <p>1 kg kampanyayı açıkça anlattılar, kafam karışmadı. Teşekkürler.</p>
-            <cite>— Müşteri yorumu</cite>
-          </blockquote>
+    <!-- Contact & Reservation -->
+    <section class="block reveal" id="contact">
+      <p class="section-label">Bize Ulaşın</p>
+      <h2 class="section-title">İletişim & Rezervasyon</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Adres</h3>
+          <p>Beylikdüzü, İstanbul<br><em>Adresi güncelleyin</em></p>
+          <h3>Çalışma Saatleri</h3>
+          <p>Pazartesi – Pazar: 11:00 – 23:00</p>
+          <div class="hours"></div>
+          <p><a href="https://wa.me/905XXXXXXXXX" class="btn btn-primary" target="_blank" rel="noopener noreferrer">WhatsApp ile Sipariş / Rezervasyon</a></p>
+          <div class="map-embed" style="margin-top:1.5rem;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24164!2d28.6444!3d41.0027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b55eae2d703095%3A0x6df74d257254841!2sBeylikd%C3%BCz%C3%BC%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1635000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Konum"></iframe>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section animate-in" id="sss">
-      <div class="section-inner">
-        <h2 class="section-title">Sıkça Sorulan Sorular</h2>
-        <ul class="faq-list">
-          <li class="faq-item">
-            <button type="button" class="faq-question">1 kg pişince neden azalır?</button>
-            <div class="faq-answer">
-              <div class="faq-answer-inner">
-                Tavuk çiğken tartılır; pişerken su ve yağ kaybı olur. Bu yüzden 1 kg çiğ tavuk, pişince yaklaşık 700–800 grama iner. Bu doğal bir süreçtir. Kampanyamız çiğ 1 kg üzerinden geçerlidir; fiyat da buna göredir.
-              </div>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button type="button" class="faq-question">Kemikli / kemiksiz farkı nedir?</button>
-            <div class="faq-answer">
-              <div class="faq-answer-inner">
-                Kemikli ürünlerde ağırlık kemiğe dahildir; kemiksizde sadece et tartılır. Menüde her iki seçenek de net yazılıdır. Tercihinize göre kemikli veya kemiksiz sipariş verebilirsiniz.
-              </div>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button type="button" class="faq-question">Kampanya içeriği nedir?</button>
-            <div class="faq-answer">
-              <div class="faq-answer-inner">
-                1 kg kampanya; çiğ tartılmış 1 kg tavuk/ızgara ürünü için geçerli fiyatı ifade eder. İçeriğe göre (tavuk göğüs, kanat, karışık vb.) fiyatlar menüde belirtilir. Yanında içecek veya ekstra ürün kampanya dışındadır; isterseniz ayrıca ekleyebilirsiniz.
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section text-center animate-in">
-      <div class="section-inner">
-        <p class="section-subtitle mb-0">Sipariş için hemen yazın – hızlı ve net yanıt veriyoruz.</p>
-        <a href="https://wa.me/905XXXXXXXXX" class="btn btn-primary mt-1" target="_blank" rel="noopener noreferrer">WhatsApp ile Sipariş Ver</a>
-        <p style="font-size:0.85rem; color:var(--gray); margin-top:0.5rem;">Numarayı işletme telefonu ile değiştirin.</p>
+        <div id="rezervasyon">
+          <div class="reserve-form">
+            <h3 style="font-family:var(--font-serif); font-size:1.35rem; margin:0 0 1.25rem;">Rezervasyon Talebi</h3>
+            <form action="#" method="post" id="reserveForm">
+              <label for="rname">Ad Soyad</label>
+              <input type="text" id="rname" name="name" required placeholder="Adınız Soyadınız">
+              <label for="rphone">Telefon</label>
+              <input type="tel" id="rphone" name="phone" required placeholder="0 5XX XXX XX XX">
+              <label for="rdate">Tarih</label>
+              <input type="date" id="rdate" name="date" required>
+              <label for="rtime">Saat</label>
+              <select id="rtime" name="time" required>
+                <option value="">Seçin</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+                <option value="21:00">21:00</option>
+              </select>
+              <label for="rnote">Not (isteğe bağlı)</label>
+              <textarea id="rnote" name="note" placeholder="Özel istekleriniz..."></textarea>
+              <button type="submit" class="btn btn-primary">Gönder</button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Çağrı Grill – Beylikdüzü Tavuk & Izgara. Günlük taze, şeffaf fiyat.</p>
-    <p><a href="iletisim.html">İletişim</a> · <a href="menu.html">Menü</a></p>
+    <div class="footer-inner">
+      <div class="footer-logo">Çağrı <span>Grill</span></div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="https://wa.me/905XXXXXXXXX" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">💬</a>
+      </div>
+      <p class="footer-address">Beylikdüzü, İstanbul</p>
+      <p class="footer-copy">© 2025 Çağrı Grill. Tüm hakları saklıdır.</p>
+    </div>
   </footer>
 
-  <a href="https://wa.me/905XXXXXXXXX" class="whatsapp-float" aria-label="WhatsApp ile sipariş ver" target="_blank" rel="noopener noreferrer">
+  <a href="https://wa.me/905XXXXXXXXX" class="whatsapp-float" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
