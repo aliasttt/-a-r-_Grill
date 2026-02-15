@@ -24,13 +24,15 @@
   // Mobile menu
   if (menuToggle && siteNav) {
     menuToggle.addEventListener('click', function () {
-      siteNav.classList.toggle('is-open');
-      menuToggle.classList.toggle('is-open');
+      var isOpen = siteNav.classList.toggle('is-open');
+      menuToggle.classList.toggle('is-open', isOpen);
+      document.body.classList.toggle('menu-open', isOpen);
     });
     siteNav.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         siteNav.classList.remove('is-open');
         menuToggle.classList.remove('is-open');
+        document.body.classList.remove('menu-open');
       });
     });
   }
